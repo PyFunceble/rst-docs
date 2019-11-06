@@ -85,26 +85,27 @@ Here is a git hook (as proposition) to be set into :code:`.git/hooks/pre-commit`
     # We construct our list of directories.
     ourDirectories="${rootDirectory}/PyFunceble ${rootDirectory}/tests"
 
-    hash find
-    hash isort
-    hash black
-    hash pylint
-    hash coverage
+    if [[ ! -z "$(git status --porcelain | awk '{ if ($NF > 0 && substr($1,1,1) != "?" && $2 ~ '/\.py/' ) print $2}')" ]]
+    then
+            hash find
+            hash isort
+            hash black
+            hash pylint
+            hash coverage
 
-    for directory in $(echo ${ourDirectories})
-    do
-        # We sort the imports.
-        find "${directory}" -name "*.py" -exec isort {} \;
-        # We format the code.
-        black "${directory}"
-        # We lint the code.
-        pylint "${directory}"
-    done
+            for directory in $(echo ${ourDirectories})
+            do
+                    # We sort the imports.
+                    find "${directory}" -name "*.py" -exec isort {} \;
+                    # We format the code.
+                    black "${directory}"
+                    # We lint the code.
+                    pylint "${directory}"
+            done
 
-    # We move to the top level directory.
-    cd "${rootDirectory}"
-    # We run the tests.
-    coverage run setup.py
+            cd "${rootDirectory}"
+            coverage run setup.py test
+    fi
 
     set +e
     set +x
