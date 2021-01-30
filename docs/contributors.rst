@@ -26,6 +26,7 @@ contribution(s) and or issue report which made or make `PyFunceble`_ a better to
 -   Odyseus - `@Odyseus`_
 -   opav - `@opav`_
 -   Reza Rizqullah - `@ybreza`_
+-   rusty-snake - `@rusty-snake`_
 -   ScriptTiger - `@ScriptTiger`_
 -   sjhgvr - `@sjhgvr`_
 -   speedmann - `@speedmann`_
@@ -46,6 +47,7 @@ contribution(s) and or issue report which made or make `PyFunceble`_ a better to
 .. _@NeolithEra: https://github.com/NeolithEra
 .. _@Odyseus: https://github.com/Odyseus
 .. _@opav: https://github.com/opav
+.. _@rusty-snake: https://github.com/rusty-snake
 .. _@ScriptTiger: https://github.com/ScriptTiger
 .. _@sjhgvr: https://github.com/sjhgvr
 .. _@speedmann: https://github.com/speedmann
