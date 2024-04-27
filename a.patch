@@ -1,0 +1,256 @@
+diff --git a/docs/code/downloader.rst b/docs/code/downloader.rst
+index 891acf80..af92f64d 100644
+--- a/docs/code/downloader.rst
++++ b/docs/code/downloader.rst
+@@ -27,14 +27,6 @@ Documentation
+     :members:
+     :private-members:
+
+-
+-:code:`DBTypeDownloader()`
+-""""""""""""""""""""""""""
+-
+-.. autoclass:: PyFunceble.downloader.db_type.DBTypeDownloader
+-    :members:
+-    :private-members:
+-
+ :code:`DirectoryStructureDownloader()`
+ """"""""""""""""""""""""""""""""""""""
+
+diff --git a/docs/code/engine.rst b/docs/code/engine.rst
+index 8f25fd38..2610ebfe 100644
+--- a/docs/code/engine.rst
++++ b/docs/code/engine.rst
+@@ -47,13 +47,6 @@ Documentation
+     :members:
+     :private-members:
+
+-:code:`MySQL()`
+-"""""""""""""""
+-
+-.. autoclass:: PyFunceble.engine.mysql.MySQL
+-    :members:
+-    :private-members:
+-
+ :code:`Sort()`
+ """"""""""""""
+
+diff --git a/docs/components/databases.rst b/docs/components/databases.rst
+index 9329bfa0..03b2b608 100644
+--- a/docs/components/databases.rst
++++ b/docs/components/databases.rst
+@@ -109,43 +109,3 @@ How to use the :code:`mysql` or :code:`mariadb` format?
+ .. note::
+     If the environment variables are not found, you will be asked to prompt the
+     information.
+-
+-.. note::
+-    You can find the respective :code:`*.sql` scripts at https://github.com/funilrys/PyFunceble/tree/dev/db_types
+-
+-Known limitations with MySQL and MariaDB
+-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-
+-MySQL and MariaDB's default settings prevent ordinary users from creating
+-stored functions, which can cause unsafe events to be written into the
+-binary log.
+-
+-You will need to contact your database manager (maybe your self) and ask
+-them to either: set this value (ad: 1) or even better, ask them to import the SQL script
+-directly into the database.
+-
+-If you are running your own database server, the recommendation is you import
+-the equivalent SQL script directly into the database, as log_bin is used
+-for ex. clustering. Turning this value into `1`, might cause security issues later on,
+-as you have lowered the servers default security level of trust.
+-
+-1. Import the matching SQL script manually as a `SUPER-PRIVILEGED` user such as root.
+-   **or**
+-
+-2. Set :code:`set global log_bin_trust_function_creators=1;` for your database.
+-
+-.. warning::
+-     We will not recommended this for safety reasons, as it can exposes you
+-     for security or stability issues later on, if you run other SQL scripts.
+-
+-Search string
+-^^^^^^^^^^^^^
+-
+-::
+-
+-    pymysql.err.InternalError: (1419, 'You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable)')
+-
+-::
+-
+-    You do not have the SUPER privilege and binary logging is enabled
+-
+diff --git a/docs/configuration/links.rst b/docs/configuration/links.rst
+index 30c7aaf9..0e4da3d5 100644
+--- a/docs/configuration/links.rst
++++ b/docs/configuration/links.rst
+@@ -55,25 +55,6 @@
+
+     **Description:** Set the upstream link to the IANA zone file configuration file.
+
+-:code:`links[mariadb]`
+-""""""""""""""""""""""
+-
+-    **Type:** :code:`string`
+-
+-    **Default value:** :code:`https://raw.githubusercontent.com/funilrys/PyFunceble/dev/db_types/mariadb.sql`
+-
+-    **Description:** Set the upstream link to the MariaDB table constructor file.
+-
+-
+-:code:`links[mysql]`
+-""""""""""""""""""""
+-
+-    **Type:** :code:`string`
+-
+-    **Default value:** :code:`https://raw.githubusercontent.com/funilrys/PyFunceble/dev/db_types/mysql.sql`
+-
+-    **Description:** Set the upstream link to the MySQL table constructor file.
+-
+ :code:`links[psl]`
+ """"""""""""""""""
+
+diff --git a/docs/configuration/outputs.rst b/docs/configuration/outputs.rst
+index e82ba249..0c7e60cb 100644
+--- a/docs/configuration/outputs.rst
++++ b/docs/configuration/outputs.rst
+@@ -74,8 +74,8 @@
+     **Description:** Set the default filename of the file which will save the temporary list of mined subject to test.
+
+
+-:code:`outputs[default_files][whois_db`
+-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++:code:`outputs[default_files][whois_db]`
++~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+     **Type:** :code:`string`
+
+@@ -83,29 +83,6 @@
+
+     **Description:** Set the default filename of the file which will save the whois information for caching.
+
+-:code:`outputs[db_type]`
+-""""""""""""""""""""""""
+-
+-    **Type:** :code:`dict`
+-
+-    **Description:** Set the default name of some important files related to the :code:`db_type` index.
+-
+-:code:`outputs[db_type][directory]`
+-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-
+@@ -79,13 +79,13 @@ use the equivalent of :code:`nslookup` and the
+
+ .. warning::
+
+-    PyFunceble request the WHOIS record in order to avoid specific false
++    PyFunceble request the WHOIS record in order to avoid specific false
+     positive cases.
+-    If the usage of WHOIS request is disabled, all domains which are still
+-    registered but not assigned to an IP address, would be flagged as
++    If the usage of WHOIS request is disabled, all domains which are still
++    registered but not assigned to an IP address, would be flagged as
+     :code:`INACTIVE`.
+
+-    It's not a problem if you keep/use the database system because the domain
++    It's not a problem if you keep/use the database system because the domain
+     will be retested over time.
+-    But please keep in mind, that without the database system, the accuracy
++    But please keep in mind, that without the database system, the accuracy
+     of the result is not guaranteed.
+diff --git a/docs/facts/known_issues.rst b/docs/facts/known_issues.rst
+index 2ed93a01..06f731f6 100644
+--- a/docs/facts/known_issues.rst
++++ b/docs/facts/known_issues.rst
+@@ -5,10 +5,3 @@ This is the list of issues which are not or will not be fixed (yet...).
+
+ * Under Travis CI the coloration may not be shown.
+ * Under GitLab CI/CD the coloration may not be shown.
+-
+-* When using either Oracle's MySQL or MariaDB-Server you will have to be
+-  either SUPER-PRIVILIDGED user (root) or be able to do
+-  :code:`set global log_bin_trust_function_creators=1;` Read more about this
+-  in the `components/databases`_
+-
+-.. _components/databases:
+diff --git a/docs/installation/requirements.rst b/docs/installation/requirements.rst
+index fd5acc71..ff053770 100644
+--- a/docs/installation/requirements.rst
++++ b/docs/installation/requirements.rst
+@@ -3,30 +3,38 @@ Requirements
+
+ Here is the list of requirements:
+
+--   Python 3.6.9+
++-   Python 3.6.10+
++-   :code:`alembic`
+ -   :code:`colorama`
+ -   :code:`cryptography`
+ -   :code:`dnspython`
+ -   :code:`domain2idna`
++-   :code:`inflection`
+ -   :code:`PyMySQL`
+ -   :code:`python-box`
+ -   :code:`python-dotenv`
+ -   :code:`PyYAML`
+ -   :code:`requests`
+ -   :code:`setuptools`
+--   :code:`urllib3`
++-   :code:`sqlalchemy`
+
+-Python 3.6.9+
+-^^^^^^^^^^^^^
++Python 3.6.10+
++^^^^^^^^^^^^^^
+
+-The specification :code:`3.6.9+` is because we test PyFunceble (daily)
+-in all version from :code:`3.6.9`.
++The specification :code:`3.6.10+` is because we test PyFunceble (daily)
++in all versions from :code:`3.6.10`.
+ Otherwise, more semantically, PyFunceble is written for all Python 3.6+ version.
+
++:code:`alembic`
++^^^^^^^^^^^^^^^
++
++As we want to automate database (MySQL/MariaDB) schema migration, we
++chose :code:`alembic` for the job.
++
+ :code:`colorama`
+ ^^^^^^^^^^^^^^^^
+
+-As we use some coloration coloration, :code:`colorama` is required.
++As we use some coloration, :code:`colorama` is required.
+
+ :code:`cryptography`
+ ^^^^^^^^^^^^^^^^^^^^
+@@ -52,6 +60,12 @@ As we propose the conversion of domains to IDNA, :code:`domain2idna` is required
+ .. _Nissar Chababy (@funilrys): https://github.com/funilrys
+ .. _on GitHub: https://github.com/PyFunceble/domain2idna
+
++:code:`inflection`
++^^^^^^^^^^^^^^^^^^
++
++We don't necessarily want to reinvent the wheel while generating the (database)
++tables name from our schama descriptions. This tool is a relief!
++
+ :code:`PyMySQL`
+ ^^^^^^^^^^^^^^^
+
+@@ -83,7 +97,8 @@ As we use :code:`requests` multiple times to communicate with webservices, :code
+
+ As we use :code:`install_requires=xx` inside our :code:`setup.py`, :code:`setuptools` is required.
+
+-:code:`urllib3`
+-^^^^^^^^^^^^^^^
++:code:`sqlalchemy`
++^^^^^^^^^^^^^^^^^^
+
+-You should normally already have it. But as we handle some of its errors while using :code:`requests`, :code:`urllib3` is required.
++As we don't want to maintain several RAW SQL files, we use :code:`sqlalchemy`
++for the database communication and manipulation.
+\ No newline at end of file
+--
+2.44.0

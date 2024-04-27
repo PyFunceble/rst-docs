@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PyFunceble.checker.availability.extras.etoxic &mdash; PyFunceble 4.2.14 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../../_static/documentation_options.js?v=6158d812"></script>
+        <script src="../../../../../_static/doctools.js?v=888ff710"></script>
+        <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../index.html" class="icon icon-home">
+            PyFunceble
+          </a>
+              <div class="version">
+                4.2.14
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../history.html">History of the project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../what-can-we-do.html">What can PyFunceble do?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../contributors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../special-thanks.html">Special Thanks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../supporting-the-project.html">Supporting the project</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../respect/license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../respect/code-of-conduct.html">Code of Conduct</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../installation/index.html">Installation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../update/index.html">Update</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../configuration/index.html">Configuration</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../usage/index.html">Usage</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../responses/index.html">Responses</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../api/index.html">API Documentation</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../components/index.html">Components</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../contributing/index.html">Contribute</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../dead-hosts/index.html">Dead-Hosts</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../facts/they-use-d-it.html">They use-d PyFunceble!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../facts/faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../facts/known_issues.html">Known issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../facts/contact.html">Discovered an issue?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../facts/contact.html#need-help">Need help?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../facts/contact.html#need-information">Need information?</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../code/modules.html">Code Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">PyFunceble</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../index.html">Module code</a></li>
+          <li class="breadcrumb-item"><a href="../../../../PyFunceble.html">PyFunceble</a></li>
+      <li class="breadcrumb-item active">PyFunceble.checker.availability.extras.etoxic</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for PyFunceble.checker.availability.extras.etoxic</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">The tool to check the availability or syntax of domain, IP or URL.</span>
+
+<span class="sd">::</span>
+
+
+<span class="sd">    ██████╗ ██╗   ██╗███████╗██╗   ██╗███╗   ██╗ ██████╗███████╗██████╗ ██╗     ███████╗</span>
+<span class="sd">    ██╔══██╗╚██╗ ██╔╝██╔════╝██║   ██║████╗  ██║██╔════╝██╔════╝██╔══██╗██║     ██╔════╝</span>
+<span class="sd">    ██████╔╝ ╚████╔╝ █████╗  ██║   ██║██╔██╗ ██║██║     █████╗  ██████╔╝██║     █████╗</span>
+<span class="sd">    ██╔═══╝   ╚██╔╝  ██╔══╝  ██║   ██║██║╚██╗██║██║     ██╔══╝  ██╔══██╗██║     ██╔══╝</span>
+<span class="sd">    ██║        ██║   ██║     ╚██████╔╝██║ ╚████║╚██████╗███████╗██████╔╝███████╗███████╗</span>
+<span class="sd">    ╚═╝        ╚═╝   ╚═╝      ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝╚══════╝╚═════╝ ╚══════╝╚══════╝</span>
+
+<span class="sd">Provides the extra rules handler for the etoxic infrastructure.</span>
+
+<span class="sd">Author:</span>
+<span class="sd">    Nissar Chababy, @funilrys, contactTATAfunilrysTODTODcom</span>
+
+<span class="sd">Special thanks:</span>
+<span class="sd">    https://pyfunceble.github.io/#/special-thanks</span>
+
+<span class="sd">Contributors:</span>
+<span class="sd">    https://pyfunceble.github.io/#/contributors</span>
+
+<span class="sd">Project link:</span>
+<span class="sd">    https://github.com/funilrys/PyFunceble</span>
+
+<span class="sd">Project documentation:</span>
+<span class="sd">    https://pyfunceble.readthedocs.io/en/dev/</span>
+
+<span class="sd">Project homepage:</span>
+<span class="sd">    https://pyfunceble.github.io/</span>
+
+<span class="sd">License:</span>
+<span class="sd">::</span>
+
+
+<span class="sd">    Copyright 2017, 2018, 2019, 2020, 2022, 2023, 2024 Nissar Chababy</span>
+
+<span class="sd">    Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<span class="sd">    you may not use this file except in compliance with the License.</span>
+<span class="sd">    You may obtain a copy of the License at</span>
+
+<span class="sd">        https://www.apache.org/licenses/LICENSE-2.0</span>
+
+<span class="sd">    Unless required by applicable law or agreed to in writing, software</span>
+<span class="sd">    distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<span class="sd">    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<span class="sd">    See the License for the specific language governing permissions and</span>
+<span class="sd">    limitations under the License.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">PyFunceble.factory</span>
+<span class="kn">import</span> <span class="nn">PyFunceble.storage</span>
+<span class="kn">from</span> <span class="nn">PyFunceble.checker.availability.extras.base</span> <span class="kn">import</span> <span class="n">ExtraRuleHandlerBase</span>
+
+
+<div class="viewcode-block" id="EToxicHandler">
+<a class="viewcode-back" href="../../../../../code/PyFunceble.checker.availability.extras.html#PyFunceble.checker.availability.extras.etoxic.EToxicHandler">[docs]</a>
+<span class="k">class</span> <span class="nc">EToxicHandler</span><span class="p">(</span><span class="n">ExtraRuleHandlerBase</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Provides our very own rulesets for the etoxic infrastructure.</span>
+
+<span class="sd">    :param status:</span>
+<span class="sd">        The previously gathered status.</span>
+<span class="sd">    :type status:</span>
+<span class="sd">        :class:`~PyFunceble.checker.availability.status.AvailabilityCheckerStatus`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">MATCHES</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">&quot;.0wn0.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.123.st&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.1forum.biz&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.1fr1.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.1talk.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.30yearsstillyoung.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.3oloum.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.3rab.pro&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.4umer.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.5turbo.org&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.666forum.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.7olm.org&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.ace.st&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.actieforum.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.actifforum.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.aforumfree.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.africamotion.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.ahladalil.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.ahlamontada.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.ahlamontada.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.ahlamountada.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.airesdelibertad.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.alanoblebouffarde.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.aldeiarpg.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.all-up.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.ambiance-varadero.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.amoticos.org&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.arabepro.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.archeryonline.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.argyletd.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.artes-ana.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.audittpassion.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.avenir-vsp.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.bachandbachettefans.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.banouta.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.bbactif.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.beagle-attitude.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.benimforum.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.black-librarium.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.boxster-cayman.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.briefmarken-forum.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.bromptonforum.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.caferacerclub.org&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.camperfree.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.canadaboard.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.canadian-forum.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.cantal-leforum.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.casatridente.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.catsboard.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.cdnmilitarycollectors.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.chemin-de-memoire-parachutistes.org&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.clooneysopenhouse.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.club-bajaj.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.clubcb500x.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.clubgtipowers.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.clubtrackerarg.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.contrabaixobr.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.corvettepassion.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.coxengineforum.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.cro-wood.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.dan-moc.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.darkbb.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.deco-moderne-fr.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.desforums.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.detenteaujardin.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.discustoutsimplement.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.e30passion.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.easyforumpro.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.editboard.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.enbicielectrica.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.entreelles.org&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.exprimetoi.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.fcmulhousefans.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.filthy-secret.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.fmsp.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.focusrstteam.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.ford100e.org&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.foroactivo.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.foroactivo.com.es&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forseps.org&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forum-jardins.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forum-zafira.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forum2jeux.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumactif.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumactif.fr&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumactif.org&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumalgerie.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumattivo.it&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumbrasil.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumegypt.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumeiros.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumeiros.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumgamers.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumgaming.fr&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumgratuit.be&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumgratuit.ch&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumgratuit.org&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumgratuit.ro&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumgreek.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumgsr750.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumlaguna3.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumlumix.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumotion.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumotion.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumperso.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumpro.fr&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forums-actifs.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumshiba.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.forumvi.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.fra.co&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.fritzbox-forum.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.fxsforexsrbijaforum.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.galoppourlavie.org&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.gid3an.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.giocattolivintage.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.glory-box-forum.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.goldwingpartage.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.goodforum.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.grisoghetto.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.gunetwork.org&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.hareketforum.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.hifi4sale.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.hooxs.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.i-love-harvard.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.iftopic.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.imperialgunneryforum.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.jeun.fr&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.jordanforum.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.just-married-rpg.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.kanak.fr&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.kawasaki-customs-forum.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.keuf.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.la-taverne-des-aventuriers.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.le-medaillon.org&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.le-site-de-la-citroen-xm.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.lebonforum.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.leforumlafigurine.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.legion-etrangere-munch.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.lemondedudiagauto.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.letrasyalgomas.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.levriers-forever.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.lights-camera-action.org&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.longluntan.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.magic-tarot58.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.mam9.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.manager-fifa.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.marvelscustoms.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.materielceleste.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.matostt.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.megane4forum.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.meilleurforum.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.minivanchrysler.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.mirbb.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.misteria7.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.montres-russes.org&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.moseisleyraumhafen.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.mundoqashqai.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.never-utopia.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.niceboard.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.novaerarpg.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.obd2sos.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.onepiece-mangas.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.open-consoles.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.orizzontescuolaforum.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.ottobreaddicts.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.own0.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.palstani.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.passion-harley.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.passionmilitaria.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.passionphoto-passionmontage.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.pblvfrance3.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.photos-camions.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.planete4x4.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.portalmercedes.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.portalmercedesbrasil.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.pro-forum.fr&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.puntoevoforum.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.quilterslastresort.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.repartocorse2.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.rigala.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.roo7.biz&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.rpg-board.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.rpghogwarts.org&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.sanata.biz&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.sdvg-deti.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.serbianforum.info&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.sgt3r.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.shaveua.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.sheffieldboardgamers.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.small-tracks.org&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.sorcieremonique.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.sporepedia2.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.stickeristas.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.subarashiis.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.superforo.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.superforum.fr&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.suzuki800.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.syriaforums.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.t5zone.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.team-z1000.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.terre-bitume.org&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.tibiaface.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.tubelesskite.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.ufologie-paranormal.org&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.unimog-mania.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.v2-honda.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.velovintageagogo.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.viterbikers.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.vivelecrpe.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.vstromhellasforum.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.walkingdead-rpg.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.warriorcatsnl.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.warriors-rpg.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.wwrail.net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.yoo7.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.ze-43eme.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;.zxr7team.com&quot;</span><span class="p">,</span>
+    <span class="p">]</span>
+
+<div class="viewcode-block" id="EToxicHandler.start">
+<a class="viewcode-back" href="../../../../../code/PyFunceble.checker.availability.extras.html#PyFunceble.checker.availability.extras.etoxic.EToxicHandler.start">[docs]</a>
+    <span class="nd">@ExtraRuleHandlerBase</span><span class="o">.</span><span class="n">ensure_status_is_given</span>
+    <span class="nd">@ExtraRuleHandlerBase</span><span class="o">.</span><span class="n">setup_status_before</span>
+    <span class="nd">@ExtraRuleHandlerBase</span><span class="o">.</span><span class="n">setup_status_after</span>
+    <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;EToxicHandler&quot;</span><span class="p">:</span>
+        <span class="n">PyFunceble</span><span class="o">.</span><span class="n">facility</span><span class="o">.</span><span class="n">Logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+            <span class="s2">&quot;Started to check </span><span class="si">%r</span><span class="s2"> against the eToxic handler.&quot;</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">status</span><span class="o">.</span><span class="n">idna_subject</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">status</span><span class="o">.</span><span class="n">status_before_extra_rules</span> <span class="o">==</span> <span class="n">PyFunceble</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">STATUS</span><span class="o">.</span><span class="n">up</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">status</span><span class="o">.</span><span class="n">netloc</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">MATCHES</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">do_on_header_match</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">req_url</span><span class="p">,</span>
+                    <span class="n">matches</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;location&quot;</span><span class="p">:</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">status</span><span class="o">.</span><span class="n">netloc</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;/search/&quot;</span><span class="p">]},</span>
+                    <span class="n">method</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">switch_to_down</span><span class="p">,</span>
+                    <span class="n">allow_redirects</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                    <span class="n">match_mode</span><span class="o">=</span><span class="s2">&quot;std&quot;</span><span class="p">,</span>
+                    <span class="n">strict</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                <span class="p">)</span>
+
+        <span class="n">PyFunceble</span><span class="o">.</span><span class="n">facility</span><span class="o">.</span><span class="n">Logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+            <span class="s2">&quot;Finished to check </span><span class="si">%r</span><span class="s2"> against our the eToxic handler.&quot;</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">status</span><span class="o">.</span><span class="n">idna_subject</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">self</span></div>
+</div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2017, 2018, 2019, 2020, 2021 Nissar Chababy (@funilrys).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
